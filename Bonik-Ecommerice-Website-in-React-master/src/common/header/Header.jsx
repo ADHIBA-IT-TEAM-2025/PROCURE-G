@@ -9,6 +9,7 @@ const Header = ({ CartItem }) => {
     <>
       <Head />
       <Search CartItem={CartItem} />
+      
     </>
   )
 }

@@ -1,36 +1,237 @@
-footer {
-  background-color: #0f3460;
-  padding: 100px 0;
-  color: #fff;
+
+:root {
+  --white: #2f4d2a;
+  --black: #000;
+  --dark: #1E1E1E;
+  --gray: #fff;
+  --lite: rgba(0, 0, 0, 0.6);
+  --primary: #ffffff;
+  --secondary: #2f4d2a;
 }
-footer h1 {
-  margin-bottom: 30px;
-  color: #2f4d2a;
-  font-weight: 800;
-  font-style: italic;
+ 
+/* footer */
+.Footer-ist {
+ 
+  a {
+    text-decoration: none !important;
+    min-width: fit-content;
+    width: fit-content;
+  }
+ 
+  a,
+  button {
+    transition: 0.5s;
+  }
+ 
+  a,
+  p {
+    font-size: 15px;
+  }
+ 
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--primary);
+    font-weight: 400;
+    font-size: 20px;
+  }
+ 
+  a,
+  button,
+  input,
+  textarea,
+  select {
+    outline: none !important;
+  }
+ 
+  .title {
+    color: var(--primary);
+  }
+ 
+  .flex,
+  .fixed_flex {
+    display: flex;
+  }
+ 
+  .flex-content {
+    width: 100%;
+    position: relative;
+  }
+ 
+  .padding_1x {
+    padding: 1rem;
+  }
+ 
+  .padding_2x {
+    padding: 2rem;
+  }
+ 
+  .padding_3x {
+    padding: 3rem;
+  }
+ 
+  .padding_4x {
+    padding: 2rem 2rem 0 2rem;
+  }
+ 
+  .btn_1 {
+    border: 1px solid var(--primary);
+    background-color: var(--primary);
+    color: var(--secondary);
+  }
+ 
+  .btn_1:hover {
+    background-color: transparent;
+    color: var(--primary);
+  }
+ 
+  .btn_2 {
+    border: 1px solid var(--secondary);
+    background-color: var(--secondary);
+    color: var(--primary);
+  }
+ 
+  .btn_2:hover {
+    border: 1px solid var(--primary);
+    background-color: var(--primary);
+    color: var(--secondary);
+  }
+ 
+  @media (max-width:920px) {
+    .flex {
+      flex-wrap: wrap;
+    }
+ 
+    .padding_1x,
+    .padding_2x,
+    .padding_3x,
+    .padding_4x {
+      padding: 1rem;
+    }
+ 
+    .btn {
+      padding: 0.5rem 1rem;
+    }
+ 
+    a,
+    p {
+      font-size: 12px;
+    }
+  }
+ 
+ 
+ 
+  footer {
+    background-color: var(--primary);
+    color: var(--lite);
+    background-image: url('../footer/FOOTER/footer.png') ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+ 
+  footer h3 {
+    color: var(--white);
+    margin-bottom: 1.5rem;
+  }
+ 
+  footer a {
+    color: var(--lite);
+    display: block;
+    margin: 15px 0;
+  }
+ 
+  footer a:hover {
+    color: var(--white);
+  }
+ 
+  footer fieldset {
+    padding: 0;
+  }
+ 
+  footer fieldset input {
+    background-color: #334f6c;
+    border: 0;
+    color: var(--lite);
+    padding: 1rem;
+  }
+ 
+  footer fieldset .btn {
+    border-radius: 0;
+    border: 0;
+  }
+ 
+  footer fieldset .btn_2:hover {
+    background-color: var(--secondary);
+    border: 0;
+    color: var(--primary);
+  }
+ 
+  footer .flex:last-child {
+    align-items: center;
+  }
+ 
+  footer .flex:last-child .flex-content:last-child {
+    text-align: start;
+  }
+ 
+  footer .flex:last-child p {
+    color: var(--white);
+    text-align: center;
+  }
+ 
+  footer .flex:last-child a {
+    border-radius: 50%;
+    width: 40px;
+    display: inline-block;
+    background-color: #f5f5f5;
+    color: var(--white);
+    padding: 0.5rem;
+    margin-right: 10px;
+    text-align: center;
+  }
+ 
+  footer .flex:last-child a:hover {
+    background-color: var(--secondary);
+    color: var(--gray);
+  }
+ 
+  @media (max-width:1100px) {
+    footer .flex:first-child {
+      flex-wrap: wrap;
+    }
+ 
+    footer .flex:first-child .flex-content {
+      flex: 1 1 40%;
+    }
+  }
+ 
+  @media (max-width:920px) {
+    footer .flex:last-child .flex-content:last-child {
+      text-align: left;
+    }
+  }
+ 
+  @media (max-width:320px) {
+    footer .flex:first-child .flex-content {
+      flex: 1 1 100%;
+    }
+  }
+ 
+.card-body-ist{
+  outline: none;
+  border: none;
+  background: #f5f5f5;
+  border-radius: 10px;
+  padding: 15px;
 }
-footer .img {
-  background-color: #0c2a4d;
-  padding: 15px 20px;
-  border-radius: 5px;
+ 
+.card-subtitle-ist{
+  color: #000;
 }
-footer .img i {
-  font-size: 20px;
-  margin: 5px;
-}
-footer .img span {
-  margin-top: 5px;
-}
-footer p {
-  font-size: 14px;
-  font-weight: 300;
-  opacity: 0.5;
-  margin-bottom: 20px;
-}
-footer h2 {
-  margin-bottom: 20px;
-}
-footer li {
-  margin-bottom: 10px;
-  opacity: 0.5;
+
+ 
 }

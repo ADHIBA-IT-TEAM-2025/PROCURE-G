@@ -14,6 +14,7 @@ const TopCart = () => {
   }
   return (
     <>
+     
       <Slider {...settings}>
         {Tdata.map((value, index) => {
           return (
