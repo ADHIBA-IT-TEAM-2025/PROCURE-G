@@ -14,11 +14,10 @@ const Pages = ({ productItems, addToCart, CartItem, shopItems }) => {
       <Home CartItem={CartItem} />
       <TopCate />
       <FlashDeals productItems={productItems} addToCart={addToCart} />
-     
-      {/* <NewArrivals />
-      <Discount /> */}
+      {/* <NewArrivals /> */}
+      {/* <Discount /> */}
       <Shop shopItems={shopItems} addToCart={addToCart} />
-      {/* <Annocument /> */}
+      <Annocument />
       <Wrapper />
     </>
   )

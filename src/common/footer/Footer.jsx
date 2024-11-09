@@ -1,14 +1,13 @@
 import React from "react"
 import "./style.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCalendarDays, faCheck, faCircleInfo, faEarDeaf, faEarListen, faFastForward, faHouse, faLink, faLocation, faLocationDot, faMobile, faMoneyBillTransfer, faPhone, faShareFromSquare, faShip, faShippingFast } from '@fortawesome/free-solid-svg-icons';
+import { faCalendarDays, faEarListen, faHouse, faLink, faLocationDot, faMoneyBillTransfer, faShareFromSquare, faShippingFast } from '@fortawesome/free-solid-svg-icons';
 import pay1 from '../footer/FOOTER/AMERICANEXPRESS.jpeg'
 import pay2 from '../footer/FOOTER/VISA.jpeg'
 import pay4 from '../footer/FOOTER/MASTERCARD.jpeg'
 import pay5 from '../footer/FOOTER/RUPAY.jpeg'
 import pay6 from '../footer/FOOTER/NETBANKING.jpeg'
 import { faFacebook, faInstagram, faInternetExplorer, faLinkedin, faTwitter, faXTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
-
 
 const Footer = () => {
   return (
@@ -44,7 +43,6 @@ const Footer = () => {
             <section class="flex-content padding_1x">
               <h3><FontAwesomeIcon icon={faShippingFast} style={{ color: "#8c8c8c" }} />&nbsp;&nbsp;&nbsp;SHIPPING</h3>
               <hr style={{ height: "1px", width: "90%", background: "#8c8c8c", outline: "none", border: "none" }} />
-              {/* <br /> */}
 
               <div style={{ display: "flex" }}>
                 <div><FontAwesomeIcon icon={faInternetExplorer} style={{ fontSize: "18px" }} /></div>
@@ -101,31 +99,31 @@ const Footer = () => {
 
               <div className="d-flex">
 
-                <div className="">
+                <div className="" >
                   <img src={pay1} className="img-fluid" />
-                  <p className="text-center">Paypal</p>
+                  <p className="text-center" style={{fontSize:"12px"}}>Paypal</p>
                 </div>
                 <div className="ms-4">
                   <img src={pay2} className="img-fluid " />
-                  <p className="text-center">Visa</p>
+                  <p className="text-center" style={{fontSize:"12px"}}>Visa</p>
                 </div>
                 <div className="ms-4">
                   <img src={pay4} className="img-fluid" />
-                  <p className="text-center">Mastercard</p>
+                  <p className="text-center" style={{fontSize:"12px"}}>Mastercard</p>
                 </div>
                 <div className="ms-4">
                   <img src={pay5} className="img-fluid" />
-                  <p className="text-center">Rupay</p>
+                  <p className="text-center" style={{fontSize:"12px"}}>Rupay</p>
                 </div>
                 <div className="ms-4">
                   <img src={pay6} className="img-fluid" />
-                  <p className="text-center">Net Banking</p>
+                  <p className="text-center" style={{fontSize:"12px"}}>Net Banking</p>
                 </div>
 
               </div>
 
             </section>
-            <section class="flex-content padding_1x text-center">
+            <section class="flex-content padding_1x text-center" >
               <p>Copyright ©2023 All rights reserved || PROCURE-G</p>
             </section>
             <section class="flex-content padding_1x">

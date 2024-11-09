@@ -1,8 +1,6 @@
 import React, { useState } from "react"
 import { Link } from "react-router-dom"
 
-
-
 const Navbar = () => {
   const [MobileMenu, setMobileMenu] = useState(false)
   return (
@@ -49,3 +47,4 @@ const Navbar = () => {
 }
 
 export default Navbar
+

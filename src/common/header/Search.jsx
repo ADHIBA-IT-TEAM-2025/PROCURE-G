@@ -4,15 +4,13 @@ import { Link } from "react-router-dom"
 import Tooltip from '@mui/material/Tooltip';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-
-
+  
 const Search = ({ CartItem }) => {
+  
   window.addEventListener("scroll", function () {
     const search = document.querySelector(".search")
     search.classList.toggle("active", window.scrollY > 100)
   })
-
-
 
   // click to top
   const [pathLength, setPathLength] = useState(0);
@@ -117,6 +115,7 @@ const Search = ({ CartItem }) => {
 
   return (
     <>
+
       <section className='search'>
         <div className='container c_flex search-conta'>
           <div className='logo width' >
@@ -162,11 +161,6 @@ const Search = ({ CartItem }) => {
 
         </div>
       </section>
-
-
-
-
-
 
       <div
         className={`progress-wrap ${offsetActive ? "active-progress" : ""}`}
@@ -265,6 +259,7 @@ const Search = ({ CartItem }) => {
           <span className='whatsapp-text'>Talk to us?</span>
         </div>
       </div>
+
     </>
   )
 }
